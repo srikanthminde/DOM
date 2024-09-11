@@ -1,0 +1,77 @@
+<html>
+    <head></head>
+    <body>
+<ul id="d1" style="border: solid 5px red; margin-top: 50px ;margin-left: 20px; margin-top: 20px;"></ul>
+<ul id="d2"></ul >
+    
+    
+</body>
+    <script>
+        
+    //     var students=["jaya","dasu","swathi","pallavi","kiran","thirumala","priya"]
+    //     students. forEach(function(s){
+    //     var el=document.createElement("li")
+    //     el.innerHTML=s
+    //     document.getElementById("d1").appendChild(el)
+    //    })
+    var students = [
+                                       {
+                      name:'jaya',
+                      gender:'female',
+                      place:'gachibowli',
+                      },
+                      {
+                      name:'dasu',
+                      gender:'male',
+                      place:'kphb'
+                      },
+                      {
+                      name:'swati',
+                      gender:'female',
+                      place:'pune'
+                      },
+                      {
+                      name:'pallavi',
+                      gender:'female',
+                      place:'assam'
+                      },
+                      {
+                      name:'kiran',
+                      gender:'male',
+                      place:'kondapur'
+                      },
+                      {
+                      name:'thirumala',
+                      gender:'male',
+                      place:'madhapur'
+                      },
+                      {
+                      name:'priya',
+                      gender:'female',
+                      place:'hitech'
+                      }
+                  ]
+
+    
+                  students.forEach(function(tr){
+                    var abc1=document.getElementById("d1")
+                    var abc2=document.createElement("li")
+                     abc2.innerHTML=tr.name
+                     
+                    var abc3=document.createElement("ul");
+                    var abc4=document.createElement("li")
+                    var abc5=document.createElement("li")
+                    abc4.innerHTML=tr.gender
+                    abc5.innerHTML=tr.place
+
+                    abc3.appendChild(abc4)
+                    abc3.appendChild(abc5)
+                    abc2.appendChild(abc3)
+                    abc1.appendChild(abc2)
+                  })
+                 
+                                
+                            
+                            
+    </script>
+</html>

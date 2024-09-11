@@ -1,0 +1,113 @@
+<html>
+    <head></head>
+    <body>
+        <table border="1">
+            <input type="text" id="searchBox" onkeyup="search()">
+            
+
+           <thead>
+           <tr>
+           <th>firstname</th>
+           <th>lastname</th>
+           <th>age</th>
+           <th>gender</th>
+           <th>city</th>
+           <th>salary</th>
+           </tr>
+           </thead>
+           <tbody id="tb">
+
+           </tbody>
+        </table>
+        <script>
+            var tbody=document.getElementById("tb")
+            var students = [
+                            {
+                            "firstname": "praveen",
+                            "lastname": "gubbala",
+                            "age": 36,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 10000
+                            },
+                            {
+                            "firstname": "srikanth",
+                            "lastname": "gubbala",
+                            "age": 32,
+                            "gender": "male",
+                            "city": "bengaluru",
+                            "salary": 20000
+                            },
+                            {
+                            "firstname": "pradeep",
+                            "lastname": "reddy",
+                            "age": 21,
+                            "gender": "male",
+                            "city": "hyd",
+                            "salary": 30000
+                            },
+                            {
+                            "firstname": "mounika",
+                            "lastname": "mudiraj",
+                            "age": 20,
+                            "gender": "female",
+                            "city": "nalgonda",
+                            "salary": 30000
+                            },
+                            {
+                            "firstname": "nikhil",
+                            "lastname": "m",
+                            "age": 22,
+                            "gender": "male",
+                            "city": "guntur",
+                            "salary": 2000
+                            },
+                            {
+                            "firstname": "riya",
+                            "lastname": "bhadouria",
+                            "age": 14,
+                            "gender": "female",
+                            "city": "indore",
+                            "salary": 40000
+                            }
+                            ];
+                            function search(){}
+
+                                students.forEach(function(students){
+                                    var trow=document.createElement("tr")
+                                    var td1=document.createElement("td")
+                                    td1.innerHTML=students.firstname
+
+                                    var trow=document.createElement("tr")
+                                    var td2=document.createElement("td")
+                                    td2.innerHTML=students.lastname
+
+                                    var trow=document.createElement("tr")
+                                    var td3=document.createElement("td")
+                                    td3.innerHTML=students.age
+
+                                    var trow=document.createElement("tr")
+                                    var td4=document.createElement("td")
+                                    td4.innerHTML=students.gender
+
+                                    var trow=document.createElement("tr")
+                                    var td5=document.createElement("td")
+                                    td5.innerHTML=students.city
+
+                                    var trow=document.createElement("tr")
+                                    var td6=document.createElement("td")
+                                    td6.innerHTML=students.salary
+
+                                    trow.appendChild(td1)
+                                    trow.appendChild(td2)
+                                    trow.appendChild(td3)
+                                    trow.appendChild(td4)
+                                    trow.appendChild(td5)
+                                    trow.appendChild(td6)
+
+
+                                    tbody.appendChild(trow)
+                                })
+        </script>
+    </body>
+</html>
